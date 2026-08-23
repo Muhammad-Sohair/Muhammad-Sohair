@@ -1,0 +1,45 @@
+name: Update Profile README
+
+on:
+  schedule:
+    - cron: '0 0 * * *'    # Every night at midnight UTC
+  workflow_dispatch:         # Manual trigger from Actions tab
+
+permissions:
+  contents: write            # Allow pushing commits
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate README and SVG assets
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/build_readme.py
+
+      - name: Check for changes
+        id: diff
+        run: |
+          git diff --quiet && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md assets/
+          git commit -m "docs: auto-update profile README and SVG assets [skip ci]"
+          git push

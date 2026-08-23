@@ -1,0 +1,17 @@
+# Secrets and Environment Variables
+.env
+
+# Python Caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python Virtual Environments
+venv/
+env/
+.venv/
+.env/
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
