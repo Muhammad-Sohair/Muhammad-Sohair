@@ -1,7 +1,7 @@
 <!-- ╔══════════════════════════════════════════════════════════╗ -->
 <!-- ║  Auto-generated README — do not edit manually.         ║ -->
 <!-- ║  Source: templates/README.template.md                   ║ -->
-<!-- ║  Last updated: 2026-08-29 05:01 UTC                        ║ -->
+<!-- ║  Last updated: 2026-08-30 02:51 UTC                        ║ -->
 <!-- ╚══════════════════════════════════════════════════════════╝ -->
 
 <div align="center">
@@ -163,7 +163,7 @@ No third-party badge services — just code, data, and pixels.
 
 <br><br>
 
-Last updated: `2026-08-29 05:01 UTC`
+Last updated: `2026-08-30 02:51 UTC`
 
 </sub>
 
