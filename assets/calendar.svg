@@ -374,5 +374,6 @@
   <rect x="744" y="109" width="11" height="11" rx="2" fill="#0d1117" />
   <rect x="758" y="25" width="11" height="11" rx="2" fill="#0d1117" />
   <rect x="758" y="39" width="11" height="11" rx="2" fill="#0d1117" />
-  <rect x="758" y="53" width="11" height="11" rx="2" fill="#0d1117" />
+  <rect x="758" y="53" width="11" height="11" rx="2" fill="#0e4429" />
+  <rect x="758" y="67" width="11" height="11" rx="2" fill="#0d1117" />
 </svg>
