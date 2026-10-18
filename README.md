@@ -1,7 +1,7 @@
 <!-- ╔══════════════════════════════════════════════════════════╗ -->
 <!-- ║  Auto-generated README — do not edit manually.         ║ -->
 <!-- ║  Source: templates/README.template.md                   ║ -->
-<!-- ║  Last updated: 2026-10-17 02:26 UTC                        ║ -->
+<!-- ║  Last updated: 2026-10-18 02:26 UTC                        ║ -->
 <!-- ╚══════════════════════════════════════════════════════════╝ -->
 
 <div align="center">
@@ -21,7 +21,7 @@
 
 ```
  66 contributions this year
- 14 active days  ·  best week: 22
+ 13 active days  ·  best week: 22
  top language: C
 ```
 
@@ -163,7 +163,7 @@ No third-party badge services — just code, data, and pixels.
 
 <br><br>
 
-Last updated: `2026-10-17 02:26 UTC`
+Last updated: `2026-10-18 02:26 UTC`
 
 </sub>
 
